@@ -31,7 +31,7 @@ def notify(msg):
     connection.send(xmpp.Message(target, msg))
 
 def main():
-    games = ['IMT36', 'IMT47', 'IMT55', 'IMT62', 'IMT41']
+    games = ['IMT36', 'IMT47', 'IMT55', 'IMT62']
 
     while True:
         try:
@@ -41,7 +41,7 @@ def main():
             found = [p for p in check_ticket(games)]
 
             if len(found) == 0:
-                time.sleep(10)
+                time.sleep(60)
                 continue
 
             msg = '-- Found tickets:'
