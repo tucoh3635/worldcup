@@ -18,9 +18,9 @@ def check_ticket(games):
             yield p
 
 def notify(msg):
-    user = "my_dummy_account@gmail.com"
-    password = "my_dummy_password"
-    target = "gtalk_to_receive_message@gmail.com"
+    user = "tucoh3635@gmail.com"
+    password = "3utrjotp"
+    target = "gabiclg@gmail.com"
 
     jid = xmpp.JID(user)
     connection = xmpp.Client('gmail.com', debug=[])
